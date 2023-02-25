@@ -25,6 +25,8 @@ eroded=cv.erode(dilated,(7,7),iterations=3)
 cv.imshow('Eroded Image',eroded)
 
 #Resize Image
+#Shrinking Image-->INTER_AREA(Default)
+#Increasing Image-->INTER_LINEAR OR INTER_CUBIC(Slower but gives better results)
 resized=cv.resize(img,(500,500),interpolation=cv.INTER_CUBIC)
 cv.imshow('Resized Image',resized)
 
