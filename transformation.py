@@ -33,18 +33,22 @@ cv.imshow('Rotated Image',rotated)
 rotated_rotated=rotate(img, -90)
 cv.imshow('Rotated Image',rotated_rotated)
 
-#Resize
+#Resizing
 resized=cv.resize(img,(500,500),interpolation=cv.INTER_CUBIC)
 cv.imshow('Resized Image',resized)
 
+#Scaling
+scaled=cv.resize(img,None,fx=3,fy=2)
+cv.imshow("Scaled Image",scaled)
+
 #Flipping
-flip=cv.flip(img,0)
+flip=cv.flip(img,0) #-->Flipping about x
 # flip=cv.flip(img,1) -->Flipping about y
 # flip=cv.flip(img,-1)-->Flipping about x and y
 cv.imshow('Flipping about x',flip)
 
 #Cropping
-cropped=img[50:200,200:400]
+cropped=img[50:200,200:400]  #Slicing performed
 cv.imshow('Cropped Image',cropped)
 
 cv.waitKey(0)
