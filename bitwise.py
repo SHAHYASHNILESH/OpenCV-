@@ -26,6 +26,6 @@ cv.imshow('Bitwise XOR',bitwise_xor)
 # cv.imshow('Bitwise NOT',bitwise_not)
 
 bitwise_not=cv.bitwise_not(circle)
-cv.imshow('Bitwise NOT',bitwise_not)
+cv.imshow('Circle NOT',bitwise_not)
 
 cv.waitKey(0)
