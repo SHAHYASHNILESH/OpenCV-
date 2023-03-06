@@ -60,7 +60,7 @@ def main():
         cv.putText(img, str(int(fps)), (10, 70),
                cv.FONT_HERSHEY_PLAIN, 3, (255, 0, 255), 3)
         cv.imshow('Image', img)
-        cv.waitKey(0)
+        cv.waitKey(1)
 
 
 if __name__ == "__main__":
